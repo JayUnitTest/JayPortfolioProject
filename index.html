@@ -4,12 +4,16 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Jay Singh Portfolio</title>
+				<!--Swiper JS CDN-->
+				<link
+				rel="stylesheet"
+				href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+					  <!-- Animate CSS CDN -->
+				  <link
+					rel="stylesheet"
+					href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+				  />
 		<link rel="stylesheet" href="assets/css/styles.css">
-		<!-- Animate CSS CDN -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
 	</head>
 	<body>
 		<!-- nav -->
@@ -20,26 +24,23 @@
 	        <li><a href="#skills" class="nav-link">Skills</a></li>
 	        <li><a href="#projects" class="nav-link">Projects</a></li>
 	        <li><a href="#contact" class="nav-link">Contact</a></li>
-			</ul>
+			<li><a href="other.html" target="_blank" class="nav-link">Other</a></li>
 			<button class="burger-menu" id="burger">
 				<ion-icon name="menu-outline"></ion-icon>
 			</button>
 		</nav>
-
-
 		<!-- about me -->
-<section class="aboutme" id="about">
-	<img src="assets/images/itsme.jpeg" alt="Jay-image" loading="lazy" class="aboutme-img" />
-	<div class="bio_animated animate__heartBeat">
-		<h2 class="bio-title">About Me</h2>
-		<p class="bio-text">
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia sed
-          dolorem fugit sapiente porro veniam pariatur dolore nostrum delectus
-          inventore tempore minus nemo, iste ullam illo laboriosam maiores
-          repudiandae quos!
-		</p>
-	</div>
-</section>
+		<section class="aboutme" id="about">
+			<img src="assets/images/itsme.jpeg" alt="Jay-image" loading="lazy" class="aboutme-img" />
+			<div class="bio_animated animate__heartBeat">
+				<h2 class="bio-title">About Me</h2>
+				<p class="bio-text">
+					Hello! my name is Jay :) 
+					I am a 23 year old undergraduate student studying the fine science of computers!
+					Front-end, back-end, you name it and i most probably enjoy it
+				</p>
+			</div>
+		</section>
 		<!-- more about -->
 		<section class="more-about">
 	       <h2>More About Me</h2>
@@ -59,34 +60,44 @@
 	       </p>
 	     </section>
 		<!-- skills -->
-		<section class="mySkills" id="skills">
-      <h2 class="skill-header">Skills</h2>
-			<!-- loading used so icons are loaded in when the user is approaching said section, decrease load times*/-->
-      <div class="skills-wrapper">
-        <div class="first-set animate__animated animate__pulse">
-          <img
-            src="assets/icons/icons8-html-5.svg"
-            alt=""
-            loading="lazy"
-            class="icon icon-card"
-          />
-          <img
-            src="assets/icons/icons8-css3.svg"
-            alt=""
-            loading="lazy"
-            class="icon icon-card"
-          />
-          <img
-            src="assets/icons/icons8-javascript.svg"
-            alt=""
-            loading="lazy"
-            class="icon icon-card"
-          />
-        </div>
-        </div>
-    </section>
+		<div><h2 class="skills-title">Skills</h2></div>
+<section class="swiper mySwiper" id="skills">
+	<div class="swiper-wrapper">
+		<article class="swiper-slide">
+			<div class="skills">
+				<img src="assets/icons/icons8-html-5.svg">
+			</div>
+			<div class="details">
+				<p>Skill level with HTML is decently proficient</p>
+				<small>HTML MARKUP LANGUAGE</small>
+			</div>
+		</article>
+		<article class="swiper-slide">
+			<div class="skills">
+				<img src="assets/icons/icons8-css3.svg">
+			</div>
+			<div class="details">
+				<p>I love me a good flexbox!</p>
+				<small>CSS</small>
+			</div>
+		</article>
+		<article class="swiper-slide">
+			<div class="skills">
+				<img src="assets/icons/icons8-javascript.svg">
+			</div>
+			<div class="details">
+				<p>Javascript is a strong skill-set of mine, very powerful LANGUAGE
+					giving so many possibilities of things to do with it!
+				</p>
+				<small>Javascript</small>
+			</div>
+			<div class="swiper-pagination"></div>
+		</article>
+	</div>
+
+</section>
 		<!-- projects -->
-		<section class="projects" id="myProjects">
+		<section class="projects" id="projects">
 		      <h2 class="projects-title">Heres what i've done!</h2>
 		      <div class="projects-container">
 		        <div class="project-container project-card">
@@ -137,10 +148,66 @@
 		      </div>
 		    </section>
 		<!-- socials -->
-
+		<section class="contact" id="contact">
+			<h2>Reach out to me below!</h2>
+			<div class="contact-form-container">
+			  <div class="contact-form">
+				<form action= "" method="POST">   <!-- need to create a form to be able to contact me- link will be updated here-->
+				  <div class="form-control">
+					<label for="name">Name</label>
+					<input
+					  type="text"
+					  id="name"
+					  name="sender-name"
+					  placeholder="Enter Your Name"
+					  class="input-field"
+					  required
+					/>
+				  </div>
+				  <div class="form-control">
+					<label for="email">Email</label>
+					<input
+					  type="email"
+					  id="email"
+					  name="sender-email"
+					  placeholder="Enter Your Email"
+					  class="input-field"
+					  required
+					/>
+				  </div>
+				  <div class="form-control">
+					<label for="message">Message</label>
+					<textarea
+					  id="message"
+					  cols="60"
+					  rows="10"
+					  placeholder="Enter Your Message"
+					  name="message"
+					  class="input-field"
+					  required
+					></textarea>
+				  </div>
+				  <input
+					type="submit"
+					value="Submit"
+					id="submit-button"
+					class="submit-button"
+				  />
+				</form>
+			  </div>
+			</div>
+		  </section>
+		  <i class="scroll-up" id="scroll-up"
+      ><img
+        src="assets/icons/arrow-up-outline.svg"
+        class="socicon up-arrow"
+        alt="scroll-up"
+    /></i>
 		<!-- scripts + including ion icon scrips to import icons -->
 		<script src="assets/js/app.js"></script>
 		<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="assets/js/script.js"></script>
 	</body>
 </html>
