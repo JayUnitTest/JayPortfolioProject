@@ -1,11 +1,26 @@
-// We want to see some non-trivial Javascript code
-// At a minimum, you should demonstrate a few simple uses of event-driven JavaScript for DOM manipulation
-// You should use ES6 syntax throughout: e.g. don't use "var", use the modern tools (template literals, arrow functions).
-// There should be no JavaScript errors in the browser console
+// arrow scroll up functionality 
+const scrollUp = document.querySelector("#scroll-up");
 
-// For more marks, we like to see a bit more complex use of JavaScript, perhaps some looping and/or more complex DOM manipulation.
-// Accessing APIs is a great option if it fits with your project, or you can work with your own, local data.
-// Your code should be DRY, if you have repeated code, consider refactoring as a function with arguments for example.
-// We like to see what you can do. Be creative.
+scrollUp.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    left: 0,
+    behavior: "smooth",
+  });
+});
 
-console.log("Obviously, you should replace this with some event handlers.")
+//swiper testimonial 
+const swiper = new Swiper(".mySwiper", {
+  pagination: {
+  el: ".swiper-pagination",
+  },
+});
+
+addEventListener('scroll', e => {
+  const scrollTop = doc.scrollTop;
+  if(scrollTop > start && scrollTop < stop){
+    const d =scrollTop - start;
+    const scale = Math.max(2,2 - (d) / 500, 1);
+    aboutmeimg.style.transform= `scale(${scale})`
+  }
+})
