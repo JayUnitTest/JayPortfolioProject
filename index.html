@@ -1,71 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Jay Singh Portfolio</title>
-				<!--Swiper JS CDN-->
-				<link
-				rel="stylesheet"
-				href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
-					  <!-- Animate CSS CDN -->
-				  <link
-					rel="stylesheet"
-					href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-				  />
-		<link rel="stylesheet" href="assets/css/styles.css">
-	</head>
-	<body>
-		<!-- nav -->
-		<nav>
-			<h1>Jay Singh: A Portolio</h1>
-			<ul class="navigation bar">
-				<li><a href="#about" class="nav-link">About Me</a></li>
-	        <li><a href="#skills" class="nav-link">Skills</a></li>
-	        <li><a href="#projects" class="nav-link">Projects</a></li>
-	        <li><a href="#contact" class="nav-link">Contact</a></li>
-			<li><a href="other.html" target="_blank" class="nav-link">Other</a></li>
-			<button class="burger-menu" id="burger">
-				<ion-icon name="menu-outline"></ion-icon>
-			</button>
-		</nav>
-		<!-- about me -->
-		<section class="aboutme" id="about">
-			<img src="assets/images/itsme.jpeg" alt="Jay-image" loading="lazy" class="aboutme-img" />
-			<div class="bio_animated animate__heartBeat">
-				<h2 class="bio-title">About Me</h2>
-				<p class="bio-text">
-					Hello! my name is Jay :) 
-					I am a 23 year old undergraduate student studying the fine science of computers!
-					Front-end, back-end, you name it and i most probably enjoy it
-				</p>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jay Singh Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Sora&display=swap" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+          <!-- Animate CSS CDN -->
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      />
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <!--header-->
+    <header>
+        <a href="#" class="pageLogo"><img src="assets/images/alogo-2.svg"></a>
+        <div class="box-menu" id="menu-icon"></div>
+        <ul class="navList">
+            <li><a href="#home">Home<i><ion-icon name="home-outline"></ion-icon></i></a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact<i><ion-icon name="mail-outline"></ion-icon></i></a></li>
+            <button class="burger-menu" id="menu-icon">
+                <ion-icon name="menu-outline"></ion-icon>
+            </button>
+        </ul>
+        <a href="#" class="cv-button">Download CV<i><ion-icon name="download-outline"></ion-icon></i></a>
+    </header>
+    
+    <!--Home section-->
+    <section class="home" id="home">
+        <div class="home-text">
+            <h3>Hello! my name is</h3>
+            <h1>Jay Singh</h1>
+            <h5>Computer Science Student</h5>
+            <p>Studying at De montfort University</p>
+            <div class="socials">
+                <a href="#"><i class='box-menu-twitter'></i></a>
+                <a href="#"><i class='box-menu-linkedIn'></i></a>
+            </div>
+            <a href="#about" class="btn">About Me</a>
+        </div>
+        <div class="home-img">
+			<img src="assets/images/itsme.jpeg">
+		</div>
+    </section>
+
+    <!--Additional info-->
+    <section class="infos">
+		<div class="items">
+			<div class="sub-box">
+				<div class="sub-img">
+					<img src="https://picsum.photos/200">
+				</div>
+				<h3>Team Projects</h3>
+				<p>Have a team project? Count me in, i thrive well in team environments</p>
 			</div>
-		</section>
-		<!-- more about -->
-		<section class="more-about">
-	       <h2>More About Me</h2>
-	       <p>
-	         Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
-	         nesciunt excepturi quos obcaecati incidunt voluptatem ipsam sunt ipsum,
-	         autem deleniti cupiditate molestias quis unde quae totam porro dicta
-	         iure animi inventore, veniam hic! Omnis nulla, delectus a voluptatibus
-	       </p>
-	       <p>
-	         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur
-	         nostrum dolor minus, libero delectus praesentium perferendis
-	       </p>
-	       <p>
-	         Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero,
-	         consequuntur labore? Ea totam voluptas amet!
-	       </p>
-	     </section>
-		<!-- skills -->
-		<div><h2 class="skills-title">Skills</h2></div>
+
+            <div class="sub-box">
+                <div class="sub-img">
+                    <img src="https://picsum.photos/200">
+                </div>
+                <h3>Quality Design</h3>
+                <p>Need quality designs for your project? Go no further and take a look at a few of my designs below!</p>
+            </div>
+
+            <div class="sub-box">
+                <div class="sub-img">
+                    <img src="https://picsum.photos/200">
+                </div>
+                <h3>Innovative ideas</h3> 
+                <p>I love a challenge and i love to think beyond the box</p>
+            </div>
+    </section>
+
+    <!--About section-->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="assets/images/itsme.jpeg">
+        </div>
+        <div class="about-text">
+            <h3>I am a computer science Undergraduate</h3>
+            <h2>Front-end, back-end, you name it and i do it!</h2>
+            <p>I am an up and coming graduate in an undergrad in CS</p>
+            <a href="#contact" class="btn">Reach out to me</a>
+        </div>
+    </section>
+
+    <!--skills section-->
+    <div><h2 class="skills-title">Skills</h2></div>
 <section class="swiper mySwiper" id="skills">
 	<div class="swiper-wrapper">
 		<article class="swiper-slide">
 			<div class="skills">
-				<img src="assets/icons/icons8-html-5.svg">
+				<img src="assets/images/icons8-html-5.svg">
 			</div>
 			<div class="details">
 				<p>Skill level with HTML is decently proficient</p>
@@ -74,7 +108,7 @@
 		</article>
 		<article class="swiper-slide">
 			<div class="skills">
-				<img src="assets/icons/icons8-css3.svg">
+				<img src="assets/images/icons8-html-5.svg">
 			</div>
 			<div class="details">
 				<p>I love me a good flexbox!</p>
@@ -83,7 +117,7 @@
 		</article>
 		<article class="swiper-slide">
 			<div class="skills">
-				<img src="assets/icons/icons8-javascript.svg">
+				<img src="assets/images/icons8-javascript.svg">
 			</div>
 			<div class="details">
 				<p>Javascript is a strong skill-set of mine, very powerful LANGUAGE
@@ -95,119 +129,75 @@
 		</article>
 	</div>
 
-</section>
-		<!-- projects -->
-		<section class="projects" id="projects">
-		      <h2 class="projects-title">Heres what i've done!</h2>
-		      <div class="projects-container">
-		        <div class="project-container project-card">
-		          <img
-		            src="assets/images/examplewhitePlaceHOLDER.jpeg"
-		            alt="1stexample"
-		            loading="lazy"
-		            class="project-pic"
-		          />
-		          <h3 class="project-title">Example of a project</h3>
-		          <p class="project-details">
-		            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
-		            ratione vel inventore labore commodi modi quos culpa aut saepe!
-		            Alias!
-		          </p>
-		          <a href="#" target="_blank" class="project-link">Check it Out</a>
-		        </div>
-		        <div class="project-container project-card">
-		          <img
-		            src="assets/images/examplewhitePlaceHOLDER.jpeg"
-		            alt="justanotherexample"
-		            loading="lazy"
-		            class="project-pic"
-		          />
-		          <h3 class="project-title">Example project</h3>
-		          <p class="project-details">
-		            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
-		            ratione vel inventore labore commodi modi quos culpa aut saepe!
-		            Alias!
-		          </p>
-		          <a href="#" target="_blank" class="project-link">have a closer look!</a>
-		        </div>
-		        <div class="project-container project-card">
-		          <img
-		            src="assets/images/examplewhitePlaceHOLDER.jpeg"
-		            alt="another-example"
-		            loading="lazy"
-		            class="project-pic"
-		          />
-		          <h3 class="project-title">Example project</h3>
-		          <p class="project-details">
-		            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
-		            ratione vel inventore labore commodi modi quos culpa aut saepe!
-		            Alias!
-		          </p>
-		          <a href="#" target="_blank" class="project-link">Check it Out</a>
-		        </div>
-		      </div>
-		    </section>
-		<!-- socials -->
-		<section class="contact" id="contact">
-			<h2>Reach out to me below!</h2>
-			<div class="contact-form-container">
-			  <div class="contact-form">
-				<form action= "" method="POST">   <!-- need to create a form to be able to contact me- link will be updated here-->
-				  <div class="form-control">
-					<label for="name">Name</label>
-					<input
-					  type="text"
-					  id="name"
-					  name="sender-name"
-					  placeholder="Enter Your Name"
-					  class="input-field"
-					  required
-					/>
-				  </div>
-				  <div class="form-control">
-					<label for="email">Email</label>
-					<input
-					  type="email"
-					  id="email"
-					  name="sender-email"
-					  placeholder="Enter Your Email"
-					  class="input-field"
-					  required
-					/>
-				  </div>
-				  <div class="form-control">
-					<label for="message">Message</label>
-					<textarea
-					  id="message"
-					  cols="60"
-					  rows="10"
-					  placeholder="Enter Your Message"
-					  name="message"
-					  class="input-field"
-					  required
-					></textarea>
-				  </div>
-				  <input
-					type="submit"
-					value="Submit"
-					id="submit-button"
-					class="submit-button"
-				  />
-				</form>
-			  </div>
+    <!--Portfolio section-->
+    <section class="portfolio" id="portfolio">
+        <div class="heading">
+            <h3>Portfolio</h3>
+            <h2>Check out some of my work!</h2>
+            <p>Responsive design is a priority of mine</p>
+
+            <div class="portfolio-content">
+                <div class="port">
+                    <img src="https://picsum.photos/200">
+                    <div class="layer">
+                        <h3>Example</h3>
+                        <h5>example pop</h5>
+                    </div>
+                </div>
+
+                <div class="portfolio-content">
+                    <div class="port">
+                        <img src="https://picsum.photos/200">
+                        <div class="layer">
+                            <h3>Example</h3>
+                            <h5>example pop</h5>
+                        </div>
+                    </div>
+
+                <div class="portfolio-content">
+                <div class="port">
+                    <img src="https://picsum.photos/200">
+                    <div class="layer">
+                        <h3>Example</h3>
+                        <h5>example pop</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--------contact---->
+	<section class="contact" id="contact">
+		<div class="container">
+			<div class="center">
+				<h3>Talk to me!</h3>
+				<p>Send me an email today:) </p>
 			</div>
-		  </section>
-		  <i class="scroll-up" id="scroll-up"
-      ><img
-        src="assets/icons/arrow-up-outline.svg"
-        class="socicon up-arrow"
-        alt="scroll-up"
-    /></i>
-		<!-- scripts + including ion icon scrips to import icons -->
-		<script src="assets/js/app.js"></script>
-		<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+			<div class="action">
+				<form>
+					<input type="email" name="email" placeholder="Enter Your email" required>
+					<input type="submit" name="submit" value="Submit">
+				</form>
+			</div>
+		</div>
+	</section>
+
+    <!--end of page-->
+	<div class="endOfPage">
+		<p>Constructed by Jay Singh - P2577997</p>
+	</div>
+
+    <i class="scroll-up" id="scroll-up"
+    ><img
+      src="assets/images/arrow-up-outline.svg"
+      class="socicon up-arrow"
+      alt="scroll-up"
+  /></i>
+
+	<script src="https://unpkg.com/scrollreveal"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script src="assets/js/script.js"></script>
-	</body>
+</body>
 </html>
