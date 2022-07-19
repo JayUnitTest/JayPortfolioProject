@@ -1,3 +1,5 @@
+
+
 const header = document.querySelector("header");
 
 const scrollUp = document.querySelector("#scroll-up");
@@ -21,6 +23,16 @@ function hover(pageLogo) {
     element.setAttribute('src', '/assets/images/alogo-2.svg');
   }
 
+
+//swiper testimonial 
+const swiper = new Swiper('.swiper', {
+  pagination: {
+    el: '.swiper-pagination',
+    type: 'bullets',
+  },
+  
+});
+
 window.onscroll = () => {
 	menu.classList.remove('bx-x');
 	navList.classList.remove('active');
@@ -32,14 +44,7 @@ const sr = ScrollReveal ({
 	reset: true
 })
 
-//swiper testimonial 
-const swiper = new Swiper('.swiper', {
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-    },
-    
-  });
+
 
 
   scrollUp.addEventListener("click", () => {
