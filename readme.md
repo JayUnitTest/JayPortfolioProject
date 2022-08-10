@@ -8,7 +8,6 @@ Any developer needs to be able to show off their work to the wold and what bette
 portfolio website!
 
 # Why a portfolio?
--- include why, who is this for?, what this can be used for etc.. .
 I chose the route of a personal portfolio as graduating from university i needed a way of showing my work 
 to the world. In the modern world, a website is the easiest, most efficient way of doing this. 
 
