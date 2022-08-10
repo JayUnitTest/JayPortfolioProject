@@ -12,25 +12,20 @@ let menu = document.querySelector('#menu-icon');
 let navList = document.querySelector('.navList');
 
 menu.onclick = () => {
-	menu.classList.toggle('bx-x');
+	menu.classList.toggle('box-menu');
 	navList.classList.toggle('active');
 };
-//hover function over logo- changes from black to pink on hover.. not functioning 
-function hover(pageLogo) {
-    element.setAttribute('src', '/assets/images/New Project.svg');
-  }
-  function unhover(pageLogo) {
-    element.setAttribute('src', '/assets/images/alogo-2.svg');
-  }
-
 
 //swiper testimonial 
-const swiper = new Swiper('.swiper', {
+var swiper = new Swiper(".mySwiper", {
   pagination: {
-    el: '.swiper-pagination',
-    type: 'bullets',
+    el: ".swiper-pagination",
+    type: "progressbar",
   },
-  
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
 });
 
 window.onscroll = () => {
@@ -43,9 +38,6 @@ const sr = ScrollReveal ({
 	duration: 2700,
 	reset: true
 })
-
-
-
 
   scrollUp.addEventListener("click", () => {
     window.scrollTo({
