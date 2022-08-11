@@ -10,7 +10,7 @@ menu.onclick = () => {
 	navList.classList.toggle('active');
 };
 //swiper testimonial 
-var swiper = new Swiper(".mySwiper", {
+let swiper = new Swiper(".mySwiper", {
 	pagination: {
 		el: ".swiper-pagination",
 		type: "progressbar",
