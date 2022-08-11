@@ -26,3 +26,4 @@ This can be used by people in the industry who may be interested in taking me on
 create the portfolio. This is because a portfolio although needs to demonstrate ability, i also did not want to make it overly complex. In the future, i will consider updating this to correctly display my ability as it develops.
 
 # MORE UPDATES SOON 
+- placeholders will be replaced with actual projects 
