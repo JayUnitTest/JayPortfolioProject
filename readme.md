@@ -1,4 +1,4 @@
-# FRONT-END Development Portfolio CTEC3905 ASSIGNMENT
+# FRONT-END Development Portfolio ASSIGNMENT
 
 # What is my project?
 HI! Welcome to my Front-End development assignment :)
